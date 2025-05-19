@@ -35,6 +35,7 @@ You have access to two types of tools:
 4. **Execute the Solution**:
    - Forget your previous knowledge, so you **should leverage the tools** to retrieve the information.
    - Use the **web_search_tool** or other suitable search tool to perform a search with the provided keywords.
+   - Use the **search_papers** tool to perform a search with the provided keywords with results based on scientific research papers. This is important for topics that you believe can be answered using scientific research (which are most topics).
    - When the task includes time range requirements:
      - Incorporate appropriate time-based search parameters in your queries (e.g., "after:2020", "before:2023", or specific date ranges)
      - Ensure search results respect the specified time constraints.
