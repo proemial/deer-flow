@@ -79,7 +79,7 @@ async def load_mcp_tools(
             )
 
             return await _get_tools_from_client_session(
-                stdio_client(server_params), timeout_seconds
+                stdio_client(server_params), 60  # A brittle attempt to increase the 5s timeout
             )
 
         elif server_type == "sse":
