@@ -4,6 +4,7 @@
 import { create } from "zustand";
 
 import type { MCPServerMetadata, SimpleMCPServerMetadata } from "../mcp";
+import { proemMcpServer } from "./proem-mcp-server";
 
 const SETTINGS_KEY = "deerflow.settings";
 
@@ -16,7 +17,7 @@ const DEFAULT_SETTINGS: SettingsState = {
     maxSearchResults: 3,
   },
   mcp: {
-    servers: [],
+    servers: [proemMcpServer],
   },
 };
 

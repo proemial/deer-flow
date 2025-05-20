@@ -26,9 +26,13 @@ git push origin main
 
 You can run these commands whenever you want to incorporate the latest changes from the original repository.
 
-# Add the Proem MCP Server
+# [Optional] Adding the Proem MCP Server
 
-In the web client, go to "Settings" -> "MCP", click "Add Servers" and add the following snippet:
+Note: The Proem MCP server is now enabled by default, so the config below is no
+longer required. However, it may assist the configuration of future MCP servers.
+
+In the web client, go to "Settings" -> "MCP", click "Add Servers" and add the
+following snippet:
 
 ```
 {
@@ -45,5 +49,5 @@ In the web client, go to "Settings" -> "MCP", click "Add Servers" and add the fo
 ```
 
 This uses the `mcp-remote` tool to make our (remote) MCP server available to the
-Deerflow backend over `stdio`, as Deerflow does not yet support the streamable
-HTTP transport (which is superceeding the `stdio` and `sse` transports).
+Deerflow backend over `stdio`. Deerflow does not yet support the streamable HTTP
+transport (which is superceeding the `stdio` and `sse` transports).
