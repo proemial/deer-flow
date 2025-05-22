@@ -10,8 +10,11 @@ import { CaseStudySection } from "./landing/sections/case-study-section";
 import { CoreFeatureSection } from "./landing/sections/core-features-section";
 import { JoinCommunitySection } from "./landing/sections/join-community-section";
 import { MultiAgentSection } from "./landing/sections/multi-agent-section";
+import { redirect } from "next/navigation";
 
 export default function HomePage() {
+  redirect("/chat");
+
   return (
     <div className="flex flex-col items-center">
       <SiteHeader />
