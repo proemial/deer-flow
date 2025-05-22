@@ -51,3 +51,4 @@ following snippet:
 This uses the `mcp-remote` tool to make our (remote) MCP server available to the
 Deerflow backend over `stdio`. Deerflow does not yet support the streamable HTTP
 transport (which is superceeding the `stdio` and `sse` transports).
+
