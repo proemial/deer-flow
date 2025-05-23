@@ -3,8 +3,8 @@ import type { MCPServerMetadata } from "../mcp";
 export const proemMcpServer: MCPServerMetadata = {
   name: "proem-mcp",
   transport: "stdio",
-  command: "npx",
-  args: ["mcp-remote", "https://mcp.proem.ai/api/mcp"],
+  command: "uvx",
+  args: ["mcp-proxy", "https://mcp.proem.ai/api/sse"],
   enabled: true,
   createdAt: Date.now(),
   updatedAt: Date.now(),
