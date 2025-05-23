@@ -4,7 +4,7 @@ export const proemMcpServer: MCPServerMetadata = {
   name: "proem-mcp",
   transport: "stdio",
   command: "npx",
-  args: ["mcp-remote", "https://mcp-server.proemial.workers.dev/mcp"],
+  args: ["mcp-remote", "https://mcp.proem.ai/api/mcp"],
   enabled: true,
   createdAt: Date.now(),
   updatedAt: Date.now(),
@@ -12,7 +12,7 @@ export const proemMcpServer: MCPServerMetadata = {
     {
       // Note:
       // These descriptions are copied from our MCP server. If you want to
-      // change them, please also update the MCP server (in the mono repo).
+      // change them, please also update the MCP server!
       name: "search-papers",
       description:
         "Search for scientific research papers matching a given search query using the Proem Index",
