@@ -14,10 +14,6 @@ RUN --mount=type=cache,target=/root/.cache/uv \
 # Copy the application into the container.
 COPY . /app
 
-# Render doesn't pick up `conf.yaml`, so this work-around is how we apply the
-# app configuraion.
-RUN mv .env.proem .env && mv conf.yaml.proem conf.yaml
-
 # Install the application dependencies.
 RUN --mount=type=cache,target=/root/.cache/uv \
   uv sync --locked
