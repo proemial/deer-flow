@@ -1,4 +1,3 @@
-.env
 Dockerfile
 .dockerignore
 .git
@@ -44,10 +43,14 @@ npm-debug.log
 Thumbs.db
 
 # Project specific
-conf.yaml
 web/
 docs/
 examples/
 assets/
 tests/
 *.log
+
+# Include model conf (incl. API key) in the Docker image built on Render (the
+# files .env and conf.yaml are made available through the Render UI).
+!/.env
+!/conf.yaml
