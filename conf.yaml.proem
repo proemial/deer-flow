@@ -6,4 +6,4 @@
 BASIC_MODEL:
   base_url: https://api.openai.com/v1
   model: "gpt-4o"
-  api_key: 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
+  api_key: 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
