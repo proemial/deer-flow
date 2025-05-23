@@ -7,16 +7,20 @@ WORKDIR /app
 
 # Pre-cache the application dependencies.
 RUN --mount=type=cache,target=/root/.cache/uv \
-    --mount=type=bind,source=uv.lock,target=uv.lock \
-    --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
-    uv sync --locked --no-install-project
+  --mount=type=bind,source=uv.lock,target=uv.lock \
+  --mount=type=bind,source=pyproject.toml,target=pyproject.toml \
+  uv sync --locked --no-install-project
 
 # Copy the application into the container.
 COPY . /app
 
+# Render doesn't pick up `conf.yaml`, so this work-around is how we apply the
+# app configuraion.
+RUN mv .env.proem .env && mv conf.yaml.proem conf.yaml
+
 # Install the application dependencies.
 RUN --mount=type=cache,target=/root/.cache/uv \
-    uv sync --locked
+  uv sync --locked
 
 EXPOSE 8000
 

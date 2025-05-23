@@ -1,0 +1,9 @@
+# [!NOTE]
+# Read the `docs/configuration_guide.md` carefully, and update the configurations to match your specific settings and requirements.
+# - Replace `api_key` with your own credentials
+# - Replace `base_url` and `model` name if you want to use a custom model
+
+BASIC_MODEL:
+  base_url: https://api.openai.com/v1
+  model: "gpt-4o"
+  api_key: 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
