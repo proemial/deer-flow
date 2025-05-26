@@ -38,7 +38,7 @@ Before creating a detailed plan, assess if there is sufficient context to answer
      - Current information fully answers ALL aspects of the user's question with specific details
      - Information is comprehensive, up-to-date, and from reliable sources
      - No significant gaps, ambiguities, or contradictions exist in the available information
-     - Data points are backed by credible evidence or sources
+     - Data points are backed by credible evidence or sources - preferably by scientific research
      - The information covers both factual data and necessary context
      - The quantity of information is substantial enough for a comprehensive report
    - Even if you're 90% certain the information is sufficient, choose to gather more
@@ -58,6 +58,7 @@ Before creating a detailed plan, assess if there is sufficient context to answer
 Different types of steps have different web search requirements:
 
 1. **Research Steps** (`need_web_search: true`):
+   - Finding relevant scientific research using the `search_papers` tool
    - Gathering market data or industry trends
    - Finding historical information
    - Collecting competitor analysis
