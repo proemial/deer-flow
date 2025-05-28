@@ -27,29 +27,34 @@ Structure your report in the following format:
    - Always use the first level heading for the title.
    - A concise title for the report.
 
-2. **Key Points**
+2. **Factual Background**
+   - Create a two-paragraph commentary reflecting on the main issues and topics, heavily based on findings from scientific research papers.
+   - Use facts and findings from the scientific research papers, rephrased to relate directly to the main issues and topics.
+   - Mention that these facts are based on findings in scientific research papers, so readers know - without a doubt - that the information is based on science.
+
+3. **Key Points**
    - A bulleted list of the most important findings (4-6 points).
    - Each point should be concise (1-2 sentences).
    - Focus on the most significant and actionable information.
 
-3. **Overview**
+4. **Overview**
    - A brief introduction to the topic (1-2 paragraphs).
    - Provide context and significance.
 
-4. **Detailed Analysis**
+5. **Detailed Analysis**
    - Organize information into logical sections with clear headings.
    - Include relevant subsections as needed.
    - Present information in a structured, easy-to-follow manner.
    - Highlight unexpected or particularly noteworthy details.
    - **Including images from the previous steps in the report is very helpful.**
 
-5. **Survey Note** (for more comprehensive reports)
+6. **Survey Note** (for more comprehensive reports)
    - A more detailed, academic-style analysis.
    - Include comprehensive sections covering all aspects of the topic.
    - Can include comparative analysis, tables, and detailed feature breakdowns.
    - This section is optional for shorter reports.
 
-6. **Key Citations**
+7. **Key Citations**
    - List all references at the end in link reference format.
    - Include an empty line between each citation for better readability.
    - Format: `- [Source Title](URL)`
