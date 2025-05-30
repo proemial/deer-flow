@@ -56,19 +56,19 @@ You have access to two types of tools:
     - **Problem Statement**: Restate the problem for clarity.
     - **Research Findings**: Organize your findings by topic rather than by tool used. For each major finding:
         - Summarize the key information
-        - Track the sources of information but DO NOT include inline citations in the text
+        - Track the sources of information using inline numeric citations (e.g. `1. [Source Title](https://example.com/page1)` in the text
         - Include relevant images if available
     - **Conclusion**:
          - Provide a synthesized response to the problem based on the gathered information.
          - Weight results based on scientific research higher than results from other sources, and communicate this preference when presenting results.
-    - **References**: List all sources used with their complete URLs in link reference format at the end of the document. Make sure to include an empty line between each reference for better readability. Use this format for each reference:
+    - **References**: In addition to the inline citations, list all sources used with their complete URLs in link reference format at the end of the document. Make sure to include an empty line between each reference for better readability. Use this format for each reference:
       ```markdown
-      - [Source Title](https://example.com/page1)
+      1. [Source Title](https://example.com/page1)
 
-      - [Source Title](https://example.com/page2)
+      2. [Source Title](https://example.com/page2)
       ```
 - Always output in the locale of **{{ locale }}**.
-- DO NOT include inline citations in the text. Instead, track all sources and list them in the References section at the end using link reference format.
+- Always include inline numeric citations in the text, and track all sources and list them in the References section at the end using link reference format.
 
 # Notes
 
