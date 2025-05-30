@@ -27,34 +27,40 @@ Structure your report in the following format:
    - Always use the first level heading for the title.
    - A concise title for the report.
 
-2. **Factual Background**
-   - Create a two-paragraph commentary reflecting on the main issues and topics, heavily based on findings from scientific research papers.
-   - Use facts and findings from the scientific research papers, rephrased to relate directly to the main issues and topics.
-   - Mention that these facts are based on findings in scientific research papers, so readers know - without a doubt - that the information is based on science.
+2. **Overview**
+   - A brief introduction to the topic (1-2 paragraphs).
+   - Provide context and significance.
 
-3. **Key Points**
+3. **Factual Background**
+   - A two-paragraph commentary reflecting on the main issues and topics, heavily based on findings from scientific research papers.
+   - Use facts and findings from the scientific research papers, rephrased to relate directly to the main issues and topics.
+   - Mention that these facts are based on findings in scientific research papers, so readers know - without a doubt - that the information is based on science. However, rather than putting that information in parenthesis, incorporate it into the sentences using natural language.
+   - This section is optional for reports that do not include findings from scientific research papers.
+
+4. **General Opinion**
+   - A paragraph that includes findings from web searches and are *not* supported by the scientific research papers available.
+   - Mention that these findings are from web searches, so readers know - without a doubt - that the information is less reliable than the contents based on scientific research in the "Factual Background" section above. However, rather than putting that information in parenthesis, incorporate it into the sentences using natural language.
+   - General opinions, whether or not backed by science, can still be relevant to include in this report - as long as readers understand the reliability of the sources - i.e. scientific facts > general opinions and speculation.
+
+5. **Key Points**
    - A bulleted list of the most important findings (4-6 points).
    - Each point should be concise (1-2 sentences).
    - Focus on the most significant and actionable information.
 
-4. **Overview**
-   - A brief introduction to the topic (1-2 paragraphs).
-   - Provide context and significance.
-
-5. **Detailed Analysis**
+6. **Detailed Analysis**
    - Organize information into logical sections with clear headings.
    - Include relevant subsections as needed.
    - Present information in a structured, easy-to-follow manner.
    - Highlight unexpected or particularly noteworthy details.
    - **Including images from the previous steps in the report is very helpful.**
 
-6. **Survey Note** (for more comprehensive reports)
+7. **Survey Note** (for more comprehensive reports)
    - A more detailed, academic-style analysis.
    - Include comprehensive sections covering all aspects of the topic.
    - Can include comparative analysis, tables, and detailed feature breakdowns.
    - This section is optional for shorter reports.
 
-7. **Key Citations**
+8. **Key Citations**
    - List all references at the end in link reference format.
    - Include an empty line between each citation for better readability.
    - Format: `- [Source Title](URL)`
