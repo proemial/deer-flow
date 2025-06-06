@@ -81,38 +81,44 @@ export function ResearchBlock({
         <div className="absolute right-4 flex h-9 items-center justify-center">
           {hasReport && !reportStreaming && (
             <>
-              <Tooltip title="Generate podcast">
-                <Button
-                  className="text-gray-400"
-                  size="icon"
-                  variant="ghost"
-                  disabled={isReplay}
-                  onClick={handleGeneratePodcast}
-                >
-                  <Headphones />
-                </Button>
-              </Tooltip>
-              <Tooltip title="Edit">
-                <Button
-                  className="text-gray-400"
-                  size="icon"
-                  variant="ghost"
-                  disabled={isReplay}
-                  onClick={handleEdit}
-                >
-                  {editing ? <Undo2 /> : <Pencil />}
-                </Button>
-              </Tooltip>
-              <Tooltip title="Copy">
-                <Button
-                  className="text-gray-400"
-                  size="icon"
-                  variant="ghost"
-                  onClick={handleCopy}
-                >
-                  {copied ? <Check /> : <Copy />}
-                </Button>
-              </Tooltip>
+              <div className="hidden sm:block">
+                <Tooltip title="Generate podcast">
+                  <Button
+                    className="text-gray-400"
+                    size="icon"
+                    variant="ghost"
+                    disabled={isReplay}
+                    onClick={handleGeneratePodcast}
+                  >
+                    <Headphones />
+                  </Button>
+                </Tooltip>
+              </div>
+              <div className="hidden sm:block">
+                <Tooltip title="Edit">
+                  <Button
+                    className="text-gray-400"
+                    size="icon"
+                    variant="ghost"
+                    disabled={isReplay}
+                    onClick={handleEdit}
+                  >
+                    {editing ? <Undo2 /> : <Pencil />}
+                  </Button>
+                </Tooltip>
+              </div>
+              <div className="hidden sm:block">
+                <Tooltip title="Copy">
+                  <Button
+                    className="text-gray-400"
+                    size="icon"
+                    variant="ghost"
+                    onClick={handleCopy}
+                  >
+                    {copied ? <Check /> : <Copy />}
+                  </Button>
+                </Tooltip>
+              </div>
             </>
           )}
           <Tooltip title="Close">
@@ -142,13 +148,13 @@ export function ResearchBlock({
               >
                 Report
               </TabsTrigger>
-              <TabsTrigger className="px-8" value="activities">
+              <TabsTrigger className="px-6 sm:px-8" value="activities">
                 Activities
               </TabsTrigger>
             </TabsList>
           </div>
           <TabsContent
-            className="h-full min-h-0 flex-grow px-8"
+            className="h-full min-h-0 flex-grow px-6 md:px-8"
             value="report"
             forceMount
             hidden={activeTab !== "report"}
@@ -169,7 +175,7 @@ export function ResearchBlock({
             </ScrollContainer>
           </TabsContent>
           <TabsContent
-            className="h-full min-h-0 flex-grow px-8"
+            className="h-full min-h-0 flex-grow px-2 md:px-8"
             value="activities"
             forceMount
             hidden={activeTab !== "activities"}

@@ -17,29 +17,29 @@ export default function Main() {
     () => openResearchId !== null,
     [openResearchId],
   );
+
   return (
     <div
       className={cn(
-        "flex h-full w-full justify-center-safe px-4 pt-12 pb-4",
-        doubleColumnMode && "gap-8",
+        "flex flex-col lg:flex-row h-full w-full justify-center-safe px-4 pt-12 pb-4",
+        doubleColumnMode && "gap-12 lg:gap-8",
+        !doubleColumnMode && "lg:max-w-[768px] lg:container lg:mx-auto",
       )}
     >
-      <MessagesBlock
-        className={cn(
-          "shrink-0 transition-all duration-300 ease-out",
-          !doubleColumnMode &&
-            `w-[768px] translate-x-[min(max(calc((100vw-538px)*0.75),575px)/2,960px/2)]`,
-          doubleColumnMode && `w-[538px]`,
-        )}
-      />
-      <ResearchBlock
-        className={cn(
-          "w-[min(max(calc((100vw-538px)*0.75),575px),960px)] pb-4 transition-all duration-300 ease-out",
-          !doubleColumnMode && "scale-0",
-          doubleColumnMode && "",
-        )}
-        researchId={openResearchId}
-      />
+      <div className={cn(
+        "flex h-full w-full flex-col transition-all duration-300 ease-out",
+        doubleColumnMode && "lg:w-2/5",
+        !doubleColumnMode && "lg:w-full"
+      )}>
+        <MessagesBlock className="w-full"/>
+      </div>
+      <div className={cn(
+        "flex h-full w-full transition-all duration-300 ease-out",
+        doubleColumnMode && "lg:w-3/5",
+        !doubleColumnMode && "lg:w-full hidden scale-0"
+      )}>
+        <ResearchBlock className="pb-4" researchId={openResearchId} />
+      </div>
     </div>
   );
 }

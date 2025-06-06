@@ -25,7 +25,7 @@ export function ConversationStarter({
       <div className="pointer-events-none fixed inset-0 flex items-center justify-center">
         <Welcome className="pointer-events-auto mb-15 w-[75%] -translate-y-24" />
       </div>
-      <ul className="flex flex-wrap">
+      <ul className="flex-wrap hidden sm:flex">
         {questions.map((question, index) => (
           <motion.li
             key={question}

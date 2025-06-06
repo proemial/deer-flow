@@ -94,7 +94,7 @@ export function MessagesBlock({ className }: { className?: string }) {
         <div className="relative flex h-42 shrink-0 pb-4">
           {!responding && messageCount === 0 && (
             <ConversationStarter
-              className="absolute top-[-218px] left-0"
+              className="absolute top-[-218px] sm:top-[-254px] md:top-[-218px] lg:top-[-232px] left-0"
               onSend={handleSend}
             />
           )}

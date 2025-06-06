@@ -138,7 +138,7 @@ function MessageListItem({
       let content: React.ReactNode;
       if (message.agent === "planner") {
         content = (
-          <div className="w-full px-4">
+          <div className="w-full px-1 sm:px-4">
             <PlanCard
               message={message}
               waitForFeedback={waitForFeedback}
@@ -150,13 +150,13 @@ function MessageListItem({
         );
       } else if (message.agent === "podcast") {
         content = (
-          <div className="w-full px-4">
+          <div className="w-full px-1 sm:px-4">
             <PodcastCard message={message} />
           </div>
         );
       } else if (startOfResearch) {
         content = (
-          <div className="w-full px-4">
+          <div className="w-full px-1 sm:px-4">
             <ResearchCard
               researchId={message.id}
               onToggleResearch={onToggleResearch}
@@ -167,7 +167,7 @@ function MessageListItem({
         content = message.content ? (
           <div
             className={cn(
-              "flex w-full px-4",
+              "flex w-full px-1 sm:px-4",
               message.role === "user" && "justify-end",
               className,
             )}
