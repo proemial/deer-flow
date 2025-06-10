@@ -86,11 +86,12 @@ export function MessagesBlock({ children, className }: { children?: React.ReactN
   return (
     <div className={cn("flex h-full flex-col", className)}>
       <MessageListView
-        children={children}
         className="flex flex-grow"
         onFeedback={handleFeedback}
         onSendMessage={handleSend}
-      />
+      >
+        {children}
+      </MessageListView>
       {!isReplay ? (
         <div className="relative flex h-42 shrink-0 pb-4">
           {!responding && messageCount === 0 && (
