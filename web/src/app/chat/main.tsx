@@ -31,15 +31,20 @@ export default function Main() {
         doubleColumnMode && "lg:w-2/5",
         !doubleColumnMode && "lg:w-full"
       )}>
-        <MessagesBlock className="w-full"/>
+        <MessagesBlock className="w-full">
+          <div className={cn(
+            "flex h-full w-full transition-all duration-300 ease-out",
+            doubleColumnMode && "lg:w-3/5",
+            !doubleColumnMode && "lg:w-full hidden scale-0"
+          )}>
+            <ResearchBlock className="pb-4 lg:hidden" researchId={openResearchId} />
+          </div>
+        </MessagesBlock>
       </div>
-      <div className={cn(
-        "flex h-full w-full transition-all duration-300 ease-out",
-        doubleColumnMode && "lg:w-3/5",
-        !doubleColumnMode && "lg:w-full hidden scale-0"
-      )}>
-        <ResearchBlock className="pb-4" researchId={openResearchId} />
-      </div>
+      <ResearchBlock className={cn(
+        "pb-4 hidden",
+        doubleColumnMode && "lg:block"
+      )} researchId={openResearchId} />
     </div>
   );
 }

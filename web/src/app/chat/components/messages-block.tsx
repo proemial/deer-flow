@@ -26,7 +26,7 @@ import { InputBox } from "./input-box";
 import { MessageListView } from "./message-list-view";
 import { Welcome } from "./welcome";
 
-export function MessagesBlock({ className }: { className?: string }) {
+export function MessagesBlock({ children, className }: { children?: React.ReactNode, className?: string }) {
   const messageIds = useMessageIds();
   const messageCount = messageIds.length;
   const responding = useStore((state) => state.responding);
@@ -86,6 +86,7 @@ export function MessagesBlock({ className }: { className?: string }) {
   return (
     <div className={cn("flex h-full flex-col", className)}>
       <MessageListView
+        children={children}
         className="flex flex-grow"
         onFeedback={handleFeedback}
         onSendMessage={handleSend}

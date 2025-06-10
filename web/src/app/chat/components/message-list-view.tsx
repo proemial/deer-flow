@@ -38,10 +38,12 @@ import { parseJSON } from "~/core/utils";
 import { cn } from "~/lib/utils";
 
 export function MessageListView({
+  children,
   className,
   onFeedback,
   onSendMessage,
 }: {
+  children?: React.ReactNode;
   className?: string;
   onFeedback?: (feedback: { option: Option }) => void;
   onSendMessage?: (
@@ -95,6 +97,7 @@ export function MessageListView({
         ))}
         <div className="flex h-8 w-full shrink-0"></div>
       </ul>
+      {children}
       {responding && (noOngoingResearch || !ongoingResearchIsOpen) && (
         <LoadingAnimation className="ml-4" />
       )}
