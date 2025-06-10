@@ -43,7 +43,7 @@ export default function Main() {
       </div>
       <ResearchBlock className={cn(
         "pb-4 hidden",
-        doubleColumnMode && "lg:block"
+        doubleColumnMode && "lg:w-3/5 lg:flex lg:grow"
       )} researchId={openResearchId} />
     </div>
   );
